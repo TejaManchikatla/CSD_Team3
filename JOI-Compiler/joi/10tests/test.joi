@@ -1,0 +1,5 @@
+
+int joi(){
+    int c = 'j';
+    return 0;
+}
