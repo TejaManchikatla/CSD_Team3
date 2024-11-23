@@ -1,0 +1,27 @@
+#include "string.joi"
+
+void printString(char $printstr)
+:
+    write_string($printstr);
+:
+
+void printInt(int num)
+:
+    char $printint[10];
+    itoa($num, $printint);
+    write_string($printint);
+:
+
+int getInt()
+:
+    char $recint[10];
+    read_string($recint, 10);
+    return atoi($recint);
+:
+
+int getString(int length)
+:
+    char $recstr[length];
+    read_string($recstr, length);
+    return $recstr;
+:

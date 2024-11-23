@@ -1,0 +1,78 @@
+This OS is part of the System Design Course. 
+
+# Features
+
+- [ ] Risc-V ISA
+- [ ] Shell
+- [ ] Memory Management
+- [ ] Process Management like creating a new process, switching between processes
+- [ ] Interrupts and Exceptions
+- [ ] Keyboard and Display Drivers 
+- [ ] File System and management like creating, deleting, opening, closing files
+- [ ] Shell Commands like `cat`, `echo`, `sleep`
+- [ ] System Calls like `open`, `read`, `write`
+
+OS model tell the basic flow of operations, including the hardware components like interrupt vector table.
+Depending on the hardware implementation of the interrupt tables, implementation will be done.
+
+Above are the feature of the JOI OS we are going to build.
+The project structure is as follows:
+
+/JoiOS  
+│
+├── src/
+│   ├── kernel/
+│   │   ├── main.cpp               # Kernel entry point
+│   │   ├── process.cpp            # Process management and scheduling
+│   │   ├── memory.cpp             # Memory management
+│   │   ├── interrupts.cpp         # Interrupt handling
+│   │   └── system_library.cpp      # System library functions like input and output stream
+│   │
+│   ├── drivers/
+│   │   ├── display.cpp            # Display driver
+│   │   └── keyboard.cpp           # Keyboard driver
+│   │
+│   ├── lib/
+│   │   ├── data_structures/
+│   │   │   ├── list.cpp           # Linked list implementation
+│   │   │   └── queue.cpp          # Queue implementation
+│   │   │
+│   │   ├── utils/
+│   │   │   └── string.cpp           # String manipulation utilities
+│   │   │
+│   │   └── heap.cpp               # Heap memory allocation
+│   │
+│   └── user/
+│       └── shell.cpp              # Simple shell for user interaction
+│
+├── include/
+│   ├── kernel/
+│   │   ├── process.h
+│   │   ├── memory.h
+│   │   ├── scheduler.h            # Scheduler declarations - Partially implemented
+│   │   ├── syscalls.h             # System call declarations  - Partially implemented
+│   │   ├── globals.h              # Global variable declarations
+│   │   └── registers.h            # Register declarations
+│   │
+│   ├── drivers/
+│   │   ├── display.h
+│   │   └── keyboard.h
+│   │   └── font.h                  # Font mapping for 8x8 
+│   │
+│   └── lib/
+│       ├── data_structures/
+│       │   ├── list.h
+│       │   └── queue.h
+│       │
+│       ├── utils/
+│       │   └── string.h
+│       │
+│       └── heap.h
+│
+├── boot/
+│   └── boot.asm                   # Assembly boot code
+│
+├── config/
+│   └── memory_map.h               # Memory layout configuration
+│
+└── Makefile                       # Build system
