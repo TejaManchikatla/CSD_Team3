@@ -1,7 +1,7 @@
-# JOI-Compiler
-A compiler for lexical analysis, syntax analysis, semantic analysis and code optimisation of JOI Language
+# JOI-Programming Language
+Designed a programming language named JOI,inspired from C++ 
 
 ## Authors
-1. Manchikatla Teja CS21B031
-2. Bodala Sri Varshitha CS21B013
-3. Velagala Swetha Reddy CS21B053
+1. Jatothu Srinivas Nayak (CS21B023)
+2. Arup Biswas (CS21B004)
+3. Niraj Kumar (CS21B038)
