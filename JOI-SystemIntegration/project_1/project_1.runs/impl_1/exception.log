@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\uday\Desktop\final\davinci-master\testing\IO\project_1\project_1.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

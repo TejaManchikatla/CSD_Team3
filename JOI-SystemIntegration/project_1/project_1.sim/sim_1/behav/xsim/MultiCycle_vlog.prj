@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main" \
+"../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main/32BitALU.v" \
+"../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main/32BitRegisterFile32.v" \
+"../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main/ALUControlUnit.v" \
+"../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main/DisplayDriver.v" \
+"../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main/ImmediateGen.v" \
+"../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main/JumpController.v" \
+"../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main/Memory.v" \
+"../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v" \
+"../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main/RAM.v" \
+"../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main/ROM.v" \
+"../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main/Screen_Memory.v" \
+"../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main/TMDS_encoder.v" \
+"../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main/ps2_rx.v" \
+"../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main/scanToAscii.v" \
+"../../../../project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycle.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
