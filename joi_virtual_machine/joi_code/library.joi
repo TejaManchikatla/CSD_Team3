@@ -1,0 +1,9 @@
+#include <math.h>
+
+int joi(){
+    int a = 14;
+    int b = 20;
+    int c = max(a,b);
+    printf("%d",c);
+    return 0;
+}
