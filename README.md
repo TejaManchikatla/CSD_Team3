@@ -1,7 +1,10 @@
-# JOI-Compiler
-A compiler for lexical analysis, syntax analysis, semantic analysis and code optimisation of JOI Language
+# JOI Assembler
+
+An Assembler for the RISCV-32I Instruction set.
+Includes Modules for basic Linker and Loader.
 
 ## Authors
-1. Manchikatla Teja CS21B031
-2. Bodala Sri Varshitha CS21B013
-3. Velagala Swetha Reddy CS21B053
+
+1. Chetan Moturi (CS21B017) [octochet](https://github.com/octochet)
+2. Nithin Chepuri (CS21B039)
+3. Thota Rajeev (CS21B049)
