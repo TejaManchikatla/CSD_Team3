@@ -1,0 +1,523 @@
+
+*** Running vivado
+    with args -log MultiCycle.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MultiCycle.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Nov 21 05:12:58 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source MultiCycle.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 514.727 ; gain = 196.480
+Command: read_checkpoint -auto_incremental -incremental C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/utils_1/imports/synth_1/MultiCycle.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/utils_1/imports/synth_1/MultiCycle.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top MultiCycle -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Device 21-9227] Part: xc7z010clg400-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14608
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1373.559 ; gain = 447.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MultiCycle' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycle.v:5]
+INFO: [Synth 8-6157] synthesizing module 'MultiCycleControlUnit' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v:8]
+INFO: [Synth 8-6157] synthesizing module 'ALUControlUnit' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/ALUControlUnit.v:8]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/ALUControlUnit.v:48]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/ALUControlUnit.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/ALUControlUnit.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControlUnit' (0#1) [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/ALUControlUnit.v:8]
+INFO: [Synth 8-6157] synthesizing module 'JumpController' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/JumpController.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/JumpController.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'JumpController' (0#1) [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/JumpController.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v:201]
+INFO: [Synth 8-6155] done synthesizing module 'MultiCycleControlUnit' (0#1) [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v:8]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile32Bit' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/32BitRegisterFile32.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile32Bit' (0#1) [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/32BitRegisterFile32.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ImmediateGen' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/ImmediateGen.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/ImmediateGen.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'ImmediateGen' (0#1) [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/ImmediateGen.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ALU32Bit' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/32BitALU.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/32BitALU.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ALU32Bit' (0#1) [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/32BitALU.v:7]
+INFO: [Synth 8-6157] synthesizing module 'RAM_NoClk' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/new/RAM_NoClk.v:3]
+	Parameter Height bound to: 256 - type: integer 
+	Parameter Length bound to: 32 - type: integer 
+	Parameter FilePath bound to: RAM.mem - type: string 
+	Parameter LoadLenght bound to: 203 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'RAM.mem' is read successfully [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/new/RAM_NoClk.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_NoClk' (0#1) [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/new/RAM_NoClk.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycle.v:201]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycle.v:207]
+INFO: [Synth 8-6155] done synthesizing module 'MultiCycle' (0#1) [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycle.v:5]
+WARNING: [Synth 8-3936] Found unconnected internal register 'MemAddress_reg' and it is trimmed from '32' to '8' bits. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycle.v:161]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1510.480 ; gain = 584.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1510.480 ; gain = 584.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1510.480 ; gain = 584.914
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1510.480 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sysclk'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:3]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports sysclk]'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:3]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'ps2c_IBUF'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-1307] Command 'Pmod' is not supported in the xdc constraint file. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'ps2d'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ps2c'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMDSn_clock'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMDSp_clock'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMDSn[0]'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMDSp[0]'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMDSn[1]'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMDSp[1]'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMDSn[2]'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMDSp[2]'. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/constrs_1/imports/new/zybo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MultiCycle_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MultiCycle_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.344 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1611.344 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:30 . Memory (MB): peak = 1611.344 ; gain = 685.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:30 . Memory (MB): peak = 1611.344 ; gain = 685.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:30 . Memory (MB): peak = 1611.344 ; gain = 685.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'MultiCycleControlUnit'
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/ALUControlUnit.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'jump_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/JumpController.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'PCWrite_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v:198]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v:198]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                     000000000001 |                             0000
+                 iSTATE4 |                     000000000010 |                             0001
+                 iSTATE1 |                     000000000100 |                             0010
+                iSTATE10 |                     000000001000 |                             0101
+                 iSTATE0 |                     000000010000 |                             0011
+                  iSTATE |                     000000100000 |                             0100
+                 iSTATE8 |                     000001000000 |                             0110
+                 iSTATE9 |                     000010000000 |                             1000
+                 iSTATE6 |                     000100000000 |                             1001
+                 iSTATE3 |                     001000000000 |                             1010
+                 iSTATE2 |                     010000000000 |                             1011
+                 iSTATE7 |                     100000000000 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'MultiCycleControlUnit'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v:198]
+WARNING: [Synth 8-327] inferring latch for variable 'AdrSrc_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'MemWrite_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'IRWrite_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'ResultSrc_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUControl_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcA_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v:65]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcB_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v:66]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycleControlUnit.v:67]
+WARNING: [Synth 8-327] inferring latch for variable 'Imm_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/ImmediateGen.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOut_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/32BitALU.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'dataOut_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/new/RAM_NoClk.v:37]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[0]' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/new/RAM_NoClk.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[1]' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/new/RAM_NoClk.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[2]' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/new/RAM_NoClk.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[3]' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/new/RAM_NoClk.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[4]' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/new/RAM_NoClk.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[5]' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/new/RAM_NoClk.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[6]' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/new/RAM_NoClk.v:35]
+WARNING: [Synth 8-327] inferring latch for variable 'SrcB_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycle.v:151]
+WARNING: [Synth 8-327] inferring latch for variable 'Result_reg' [C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.srcs/sources_1/imports/RISC-V-Processor-main/MultiCycle.v:137]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:32 . Memory (MB): peak = 1611.344 ; gain = 685.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 5     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 7     
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---RAMs : 
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 12    
+	   4 Input   32 Bit        Muxes := 3     
+	  12 Input   12 Bit        Muxes := 1     
+	   8 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   8 Input    5 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	  12 Input    5 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 1     
+	  12 Input    4 Bit        Muxes := 1     
+	  12 Input    2 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 4     
+	   7 Input    1 Bit        Muxes := 1     
+	  12 Input    1 Bit        Muxes := 13    
+	  18 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP ALUOut0, operation Mode is: A*B.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+DSP Report: Generating DSP ALUOut0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+DSP Report: Generating DSP ALUOut0, operation Mode is: A*B.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+DSP Report: Generating DSP ALUOut0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+DSP Report: Generating DSP ALUOut0, operation Mode is: A*B.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+DSP Report: Generating DSP ALUOut0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+DSP Report: Generating DSP ALUOut0, operation Mode is: A*B.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+DSP Report: Generating DSP ALUOut0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+DSP Report: operator ALUOut0 is absorbed into DSP ALUOut0.
+INFO: [Synth 8-3971] The signal "MultiCycle/RegisterFile32Bit/Registers_reg" was recognized as a true dual port RAM template.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ALUControlUnit/ALUOp_reg[4]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ALUControlUnit/ALUOp_reg[3]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ALUControlUnit/ALUOp_reg[2]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ALUControlUnit/ALUOp_reg[1]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ALUControlUnit/ALUOp_reg[0]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/JumpController/jump_reg) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/PCWrite_reg) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_current_state_reg[11]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_current_state_reg[10]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_current_state_reg[9]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_current_state_reg[8]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_current_state_reg[7]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_current_state_reg[6]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_current_state_reg[5]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_current_state_reg[4]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_current_state_reg[3]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_current_state_reg[2]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_current_state_reg[1]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_current_state_reg[0]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_next_state_reg[11]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_next_state_reg[10]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_next_state_reg[9]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_next_state_reg[8]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_next_state_reg[7]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_next_state_reg[6]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_next_state_reg[5]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_next_state_reg[4]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_next_state_reg[3]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_next_state_reg[2]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_next_state_reg[1]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/FSM_onehot_next_state_reg[0]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/AdrSrc_reg) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/MemWrite_reg) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/IRWrite_reg) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ResultSrc_reg[1]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ResultSrc_reg[0]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ALUControl_reg[4]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ALUControl_reg[3]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ALUControl_reg[2]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ALUControl_reg[1]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ALUControl_reg[0]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ALUSrcA_reg[1]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ALUSrcA_reg[0]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ALUSrcB_reg[1]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/ALUSrcB_reg[0]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (MultiCycleControlUnit/RegWrite_reg) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[31]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[30]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[29]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[28]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[27]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[26]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[25]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[24]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[23]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[22]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[21]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[20]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[19]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[18]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[17]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[16]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[15]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[14]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[13]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[12]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[11]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[10]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[9]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[8]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[7]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[6]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[5]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[4]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[3]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[2]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[1]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ImmediateGen/Imm_reg[0]) is unused and will be removed from module MultiCycle.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[31]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[30]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[29]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[28]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[27]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[26]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[25]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[24]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[23]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[22]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[21]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[20]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[19]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[18]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[17]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[16]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[15]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[14]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[13]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[12]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[11]) is unused and will be removed from module ALU32Bit.
+WARNING: [Synth 8-3332] Sequential element (ALUOut_reg[10]) is unused and will be removed from module ALU32Bit.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 1611.344 ; gain = 685.777
+---------------------------------------------------------------------------------
+ Sort Area is  ALUOut0_0 : 0 0 : 3101 5879 : Used 1 time 0
+ Sort Area is  ALUOut0_0 : 0 1 : 2778 5879 : Used 1 time 0
+ Sort Area is  ALUOut0_3 : 0 0 : 2759 5418 : Used 1 time 0
+ Sort Area is  ALUOut0_3 : 0 1 : 2659 5418 : Used 1 time 0
+ Sort Area is  ALUOut0_6 : 0 0 : 3101 5261 : Used 1 time 0
+ Sort Area is  ALUOut0_6 : 0 1 : 2160 5261 : Used 1 time 0
+ Sort Area is  ALUOut0_8 : 0 0 : 2158 3958 : Used 1 time 0
+ Sort Area is  ALUOut0_8 : 0 1 : 1800 3958 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU32Bit    | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:44 . Memory (MB): peak = 1611.344 ; gain = 685.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:44 . Memory (MB): peak = 1611.344 ; gain = 685.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:44 . Memory (MB): peak = 1611.344 ; gain = 685.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1611.344 ; gain = 685.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1611.344 ; gain = 685.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1611.344 ; gain = 685.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1611.344 ; gain = 685.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1611.344 ; gain = 685.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1611.344 ; gain = 685.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1611.344 ; gain = 685.777
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 467 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:50 . Memory (MB): peak = 1611.344 ; gain = 584.914
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:52 . Memory (MB): peak = 1611.344 ; gain = 685.777
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.344 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.344 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 4ed9c6a0
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 145 Warnings, 18 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:59 . Memory (MB): peak = 1611.344 ; gain = 1087.105
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/uday/Desktop/final/davinci-master/testing/IO/project_1/project_1.runs/synth_1/MultiCycle.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file MultiCycle_utilization_synth.rpt -pb MultiCycle_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 21 05:14:08 2024...

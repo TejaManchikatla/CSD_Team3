@@ -1,7 +1,6 @@
-# JOI-Compiler
-A compiler for lexical analysis, syntax analysis, semantic analysis and code optimisation of JOI Language
+# JOI-System Integration
 
 ## Authors
-1. Manchikatla Teja CS21B031
-2. Bodala Sri Varshitha CS21B013
-3. Velagala Swetha Reddy CS21B053
+1. Siva Sai CS21B032
+2. Vikram CS21B036
+3. Sreya CS21B041
