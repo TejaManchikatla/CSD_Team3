@@ -1,7 +1,13 @@
-# JOI-Compiler
-A compiler for lexical analysis, syntax analysis, semantic analysis and code optimisation of JOI Language
+# joi_virtual_machine
 
-## Authors
-1. Manchikatla Teja CS21B031
-2. Bodala Sri Varshitha CS21B013
-3. Velagala Swetha Reddy CS21B053
+Usage Instructions:
+python main.py <path of source file(s) relative to main.py> <output_filename>
+
+
+Team Members: <br>
+
+CS21B043 S DHANANJAYAN
+
+CS21B045 SANTHOSI R M
+
+CS21B007 ASHU TIWARI
