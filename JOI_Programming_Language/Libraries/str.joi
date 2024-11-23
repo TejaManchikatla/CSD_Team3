@@ -1,0 +1,151 @@
+
+## Function to calculate the length of a string
+int strlen(char $strlenstr)
+:
+    int length = 0;
+    while strlenstr[length] != '\0' :
+    {
+        length++;
+    }
+    return length;
+:
+
+## Function to copy a string from src to dest
+void strcpy(char $dest, char $src)
+:
+    int i = 0;
+    while src[i] != '\0' :
+    {
+        dest[i] = src[i];
+        i++;
+    }
+    dest[i] = '\0'; ## Null terminate the destination string
+:
+
+## Function to compare two strings (similar to strcmp)
+int strcmp(char $str1, char $str2)
+:
+    while $str1 != '\0' && $str2 != '\0' :
+    {
+        if $str1 != $str2 :
+        {
+            return ($str1 - $str2);
+        }
+        str1++;
+        str2++;
+    }
+    return ($str1 - $str2); ## If both strings are equal till the null-terminator
+:
+
+## Function to concatenate two strings (similar to strcat)
+void strcat(char $dest, char $src)
+:
+    while $dest != '\0':
+    {
+        dest++; ## Move to the end of the destination string
+    }
+    while $src != '\0':
+    {
+        $dest = $src; ## Copy each character from src to dest
+        dest++;
+        src++;
+    }
+    $dest = '\0'; ## Null terminate the concatenated string
+:
+
+## Function to convert a string to uppercase
+void to_uppercase(char $strToUpper)
+:
+    while $strToUpper != '\0':
+    {
+        if $strToUpper >= 'a' && $strToUpper <= 'z' :
+        {
+            $strToUpper = $strToUpper - 'a' + 'A'; ## Convert to uppercase
+        }
+        strToUpper++;
+    }
+:
+
+## Function to convert a string to lowercase
+void to_lowercase(char $strToLower)
+:
+    while $strToLower != '\0':
+    {
+        if $strToLower >= 'A' && $strToLower <= 'Z' :
+        {
+            $strToLower = $strToLower - 'A' + 'a'; ## Convert to lowercase
+        }
+        strToLower++;
+    }
+:
+
+## Function to check if a string is a palindrome
+int is_palindrome(char $strIsPalindrome)
+:
+    int length = strlen(strIsPalindrome);
+    int i = 0;
+    while i < length / 2:
+    {
+        if strIsPalindrome[i] != strIsPalindrome[length - i - 1] :
+        {
+            return 0; ## Not a palindrome
+        }
+        i++;
+    }
+    return 1; ## Is a palindrome
+:
+
+## Function to reverse a string
+void reverse(char $strReverse)
+:
+    int length = strlen(strReverse);
+    int i = 0;
+    while i < length / 2:
+    {
+        char temp = strReverse[i];
+        strReverse[i] = strReverse[length - i - 1];
+        strReverse[length - i - 1] = temp;
+        i++;
+    }
+:
+
+## Function to convert a string to an integer
+int atoi(char $strAtoi)
+:
+    int num = 0;
+    int sign = 1;
+    if $strAtoi == '-' :
+    {
+        sign = -1;
+        strAtoi++;
+    }
+    while $strAtoi != '\0':
+    {
+        num = num * 10 + ($strAtoi - '0');
+        strAtoi++;
+    }
+    return num * sign;
+:
+
+## Function to convert an integer to a string
+void itoa(int num, char $strItoa)
+:
+    int i = 0;
+    int is_negative = 0;
+    if num < 0 :
+    {
+        is_negative = 1;
+        num = -num;
+    }
+    while num != 0:
+    {
+        strItoa[i++] = num % 10 + '0';
+        num = num / 10;
+    }
+    if is_negative :
+    {
+        str[i++] = '-';
+    }
+    strItoa[i] = '\0';
+    reverse(strItoa);
+:
